@@ -2,19 +2,6 @@
   <head>
     <title>Christopher Shaw</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script>
-		var xhr = new XMLHttpRequest();
-		xhr.open( "GET", "https://menu.chris-shaw.com/", true);
-		xhr.onreadystatechange = function () {
-			if (xhr.readyState == 4) {
-				var parser = new DOMParser();
-				var newDom = parser.parseFromString(xhr.responseText,"text/html");	   	
-				let nav = newDom.querySelector(".c-nav");
-				document.querySelector('body').prepend(nav);
-			}
-		}
-		xhr.send( null );
-		</script>
     <style>
       @font-face {
         font-family: DestroyEarthBB;
@@ -35,14 +22,13 @@
         max-width: 800px;
       }
 	    
-	    img {
+	   img {
 		     min-width: 100px;
 	    }
     </style>
   </head>
 <body>
   <link rel="stylesheet" media="screen" href="https://toolkit.chris-shaw.com/css/toolkit.css" />
-
   <div class="o-layout">
     <div class="o-layout__item u-width--12-12 u-margin-top--large">
       <img src="./chrislogo.png" class="logo" />
@@ -50,88 +36,7 @@
     <div class="o-layout__item u-width--12-12 u-margin-top--large u-font-size--delta u-padding--small">
       Yorkshire born software developer with experience across the stack
     </div>
-  </div>
-
-  <div class="o-layout u-theme-white ">
-    <div class="o-layout__item u-width--6-12 u-padding--large">
-
-      <div class="o-layout">
-        <div class="o-layout__item u-width--12-12 u-width--2-12@sm  u-font-size--delta  u-padding--small c-box c-b">
-          <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="" style="width: 100%;" />
-        </div>
-
-        <div class="o-layout__item u-width--12-12 u-width--10-12@sm  u-padding-top--small">
-          <p class="u-margin-bottom--small">
-            I use github to store the versioned code of projects I work on, here you can get an insight into what I have worked on and the sort of code I write.
-          </p>
-          <a href="https://github.com/christopher-paul-shaw/" target="_blank" class="c-button c-box u-padding--small c-box--round">Check Out My Github</a>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  
-  <div class="o-layout u-theme-blue ">
-    <div class="o-layout__item u-width--6-12 u-padding--large">
-
-      <div class="o-layout">
- 
-
-        <div class="o-layout__item u-width--21-12 u-width--10-12@sm  u-padding-top--small">
-          <p class="u-margin-bottom--small ">
-            I have released several packages to packagest for use in composer. Although I am unable to do this as often as I like, when I get the chance I rework key functionality of my own projects into packages.  
-          </p>
-          <a href="https://packagist.org/packages/christopher-paul-shaw/" target="_blank" class="c-button c-box u-padding--small c-box--round u-theme-white">Check Out My Packagist</a>
-        </div>
-       <div class="o-layout__item u-width--12-12 u-width--2-12@sm  u-font-size--delta  u-padding--small c-box c-b">
-          <img src="https://cdn.iconscout.com/icon/free/png-512/code-280-460136.png" alt="" style="width: 100%;" />
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div class="o-layout u-theme-white ">
-    <div class="o-layout__item u-width--6-12 u-padding--large ">
-
-      <div class="o-layout">
-        <div class="o-layout__item u-width--12-12 u-width--2-12@sm  u-font-size--delta  u-padding--small c-box c-b">
-          <img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" alt="" style="width: 100%;" />
-        </div>
-
-        <div class="o-layout__item u-width--12-12 u-width--10-12@sm  u-padding-top--small">
-          <p class="u-margin-bottom--small">
-            Codepen is my go to when I want to quickly mock up a design or prorotype something in HTML before committing to using it. Have a look at my pens.
-          </p>
-          <a href="https://codepen.io/cshaw/" target="_blank" class="c-button c-box u-padding--small c-box--round">Check Out My CodePen</a>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  
-    <div class="o-layout u-theme-red ">
-    <div class="o-layout__item u-width--6-12 u-padding--large">
-
-      <div class="o-layout">
- 
-
-        <div class="o-layout__item u-width--12-12 u-width--10-12@sm  u-padding-top--small">
-          <p class="u-margin-bottom--small ">
-            I have a blog where i post articles and technical notes. The blog itself is hosted on github using Github actions to
-            process the content and generate a static website.  
-          </p>
-          <a href="https://blog.chris-shaw.com" target="_blank" class="c-button c-box u-padding--small c-box--round u-theme-white">Check Out My Blog</a>
-        </div>
-       <div class="o-layout__item u-width--12-12 u-width--2-12@sm  u-font-size--delta  u-padding--small c-box c-b">
-          <img src="https://www.freeiconspng.com/uploads/blogger-logo-icon-png-22.png" alt="" style="width: 100%;" />
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
- 
+  </div> 
   </div>
 </body>
 </html>
